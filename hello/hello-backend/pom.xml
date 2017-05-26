@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<parent>
+		<groupId>sk.zatko.ejb.hello</groupId>
+		<artifactId>hello</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>hello-backend</artifactId>
+	<name>hello-backend</name>
+	<packaging>ejb</packaging>
+
+	<build>
+	
+		<finalName>hello-backend</finalName>
+	
+		<plugins>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ejb-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <ejbVersion>3.1</ejbVersion>
+                    <generateClient>true</generateClient>
+                </configuration>
+            </plugin>
+		</plugins>
+		
+	</build>
+	
+	
+</project>
